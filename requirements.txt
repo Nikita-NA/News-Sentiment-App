@@ -1,0 +1,11 @@
+beautifulsoup4
+requests
+pandas
+nltk
+textblob
+torch
+torchaudio
+torchvision
+coqui-tts
+streamlit
+gradio
