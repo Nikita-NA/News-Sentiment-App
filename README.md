@@ -1,9 +1,9 @@
-## **📰 News Summarization and Text-to-Speech Application**
+## **📰 News Summarization and Sentiment-Based Text-to-Speech Application**
 
 ### **🔹 Project Overview**
-This is a **web-based application** that extracts key details from multiple news articles related to a given company, performs **sentiment analysis**, conducts a **comparative analysis**, and generates a **Hindi text-to-speech (TTS) output**.  
+This is a **web-based application** that extracts key insights from multiple news articles related to a given company, performs **sentiment analysis**, conducts a **comparative analysis**, and generates a **Hindi text-to-speech (TTS) output** summarizing the sentiment trends.  
 
-The application allows users to enter a **company name** and receive:  
+Users can enter a **company name** and receive:
 ✅ Extracted news titles, summaries, and metadata  
 ✅ **Sentiment classification** (Positive, Negative, Neutral)  
 ✅ **Comparative sentiment analysis** across multiple articles  
@@ -12,25 +12,24 @@ The application allows users to enter a **company name** and receive:
 ---
 
 ## **🔹 Features & Workflow**
-1️⃣ **News Extraction**: Scrapes at least **10 unique news articles** related to the given company using **BeautifulSoup (bs4)**.  
-2️⃣ **Sentiment Analysis**: Classifies each article as **Positive, Negative, or Neutral**.  
-3️⃣ **Comparative Analysis**: Highlights **how different articles portray the company**.  
-4️⃣ **Text-to-Speech (TTS) in Hindi**: Converts the final sentiment summary to **Hindi speech** using an **open-source TTS model**.  
-5️⃣ **User Interface**: Simple **web-based UI using Streamlit or Gradio**.  
-6️⃣ **API-based Architecture**: Communication between the frontend and backend happens via APIs.  
-7️⃣ **Deployment**: The app is deployed on **Hugging Face Spaces**.  
+1️⃣ **News Extraction**: Fetches at least **10 relevant news articles** related to the given company using **NewsAPI**.  
+2️⃣ **Sentiment Analysis**: Classifies each article as **Positive, Negative, or Neutral** using **VADER sentiment analysis**.  
+3️⃣ **Comparative Analysis**: Provides an overview of how different articles portray the company.  
+4️⃣ **Text-to-Speech (TTS) in Hindi**: Converts the final sentiment summary to **Hindi speech** using **gTTS (Google Text-to-Speech)**.  
+5️⃣ **User Interface**: Interactive **web-based UI using Streamlit**.  
+6️⃣ **Deployment**: Hosted on **Hugging Face Spaces** for easy access.  
 
 ---
 
 ## **🔹 Project Setup & Installation**
 ### **📌 Prerequisites**
-- **Python 3.13+** installed  
-- **Virtual Environment (venv)** setup  
+- **Python 3.10+** installed  
+- **Virtual Environment (venv) setup**  
 
 ### **📌 Clone the Repository**
 ```sh
 git clone <your-github-repo-link>
-cd assignment_project
+cd news-summarization-app
 ```
 
 ### **📌 Create & Activate Virtual Environment**
@@ -47,7 +46,7 @@ pip install -r requirements.txt
 
 ### **📌 Run the Application**
 ```sh
-python app.py
+streamlit run app.py
 ```
 
 ---
@@ -55,47 +54,47 @@ python app.py
 ## **🔹 API Endpoints**
 | **Endpoint**         | **Method** | **Description** |
 |----------------------|------------|----------------|
-| `/fetch_news`       | `GET`       | Scrape news articles |
-| `/analyze_sentiment` | `POST`      | Perform sentiment analysis |
-| `/generate_tts`      | `POST`      | Convert summary to Hindi speech |
+| `/fetch_news`       | `GET`       | Fetches news articles from **NewsAPI** |
+| `/analyze_sentiment` | `POST`      | Performs sentiment analysis using **VADER** |
+| `/generate_tts`      | `POST`      | Converts sentiment summary to **Hindi speech** using **gTTS** |
 
 ---
 
 ## **🔹 Folder Structure**
 ```
-ASSIGNMENT TO SUBMIT
-│── assignment_project
-│   ├── venv/               # Virtual environment
-│   ├── data/               # Stores raw & processed data
-│   ├── models/             # Pretrained models (if needed)
-│   ├── static/             # Static files (if needed)
-│   ├── templates/          # Frontend templates (Gradio)
-│   ├── requirements.txt    # Dependencies list
-│   ├── app.py              # Main script to run the app
-│   ├── api.py              # API endpoints
-│   ├── utils.py            # Helper functions (scraping, sentiment analysis, TTS)
-│   ├── README.md           # Documentation
-│   ├── .gitignore          # Ignore unnecessary files
+news-summarization-app
+│── venv/               # Virtual environment
+│── data/               # Stores raw & processed news data
+│── static/             # Static assets (if needed)
+│── templates/          # Frontend templates (Streamlit)
+│── requirements.txt    # Dependencies list
+│── app.py              # Main script to run the app
+│── news_scraper.py     # News extraction logic
+│── sentiment_analysis.py  # Sentiment analysis functions
+│── tts_generator.py    # Text-to-Speech (TTS) implementation
+│── README.md           # Documentation
+│── .gitignore          # Ignore unnecessary files
 ```
 
 ---
 
 ## **🔹 Deployment**
-The project will be deployed on **Hugging Face Spaces**.  
+The project is deployed on **Hugging Face Spaces** and can be accessed at:  
+🔗 **[Live Demo](<your-huggingface-spaces-link>)**
 
 ---
 
-## **🔹 TODO / Next Steps**
-✅ Implement **news extraction** (Step 2)  
-✅ Implement **sentiment analysis** (Step 3)  
-✅ Implement **comparative analysis** (Step 4)  
-✅ Integrate **text-to-speech (Hindi)** (Step 5)  
-✅ Build **frontend (Streamlit/Gradio)** (Step 6)  
-✅ Deploy on **Hugging Face Spaces** (Step 7)  
+## **🔹 Improvements from Initial Version**
+✅ Replaced **web scraping** with **NewsAPI** for more reliable news fetching.  
+✅ Optimized **sentiment analysis** using **VADER** instead of a custom model.  
+✅ Enhanced **TTS quality** by using **gTTS** instead of an open-source model.  
+✅ **Improved UI** with **Streamlit** for a more interactive experience.  
+✅ Deployed successfully on **Hugging Face Spaces** for easy access.  
 
 ---
 
 ## **🔹 Contributors**
-- **Nikita N A** (Assignment Submission)  
+- **Nikita N A**
 
 ---
+
