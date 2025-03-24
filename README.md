@@ -30,7 +30,7 @@ Users can enter a **company name** and receive:
 ### **📌 Clone the Repository**
 ```sh
 git clone <https://github.com/Nikita-NA/News-Sentiment-App.git>
-cd news-summarization-app
+cd News-Sentiment-App
 ```
 
 ### **📌 Create & Activate Virtual Environment**
