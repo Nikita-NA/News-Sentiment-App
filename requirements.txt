@@ -1,11 +1,14 @@
 beautifulsoup4
 requests
 pandas
-nltk
+nltk==3.8.1
 textblob
 torch
 torchaudio
 torchvision
-coqui-tts
 streamlit
 gradio
+scikit-learn
+gtts
+flask
+flask-cors
