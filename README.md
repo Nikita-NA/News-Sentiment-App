@@ -4,6 +4,7 @@
 This is a **web-based application** that extracts key insights from multiple news articles related to a given company, performs **sentiment analysis**, conducts a **comparative analysis**, and generates a **Hindi text-to-speech (TTS) output** summarizing the sentiment trends.  
 
 Users can enter a **company name** and receive:
+
 ✅ Extracted news titles, summaries, and metadata  
 ✅ **Sentiment classification** (Positive, Negative, Neutral)  
 ✅ **Comparative sentiment analysis** across multiple articles  
