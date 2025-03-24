@@ -47,7 +47,8 @@ pip install -r requirements.txt
 
 ### **📌 Run the Application**
 ```sh
-streamlit run app.py
+python -m utils.api (in 1st terminal)
+streamlit run app.py (in 2nd terminal)
 ```
 
 ---
