@@ -84,15 +84,6 @@ The project is deployed on **Hugging Face Spaces** and can be accessed at:
 
 ---
 
-## **🔹 Improvements from Initial Version**
-✅ Replaced **web scraping** with **NewsAPI** for more reliable news fetching.  
-✅ Optimized **sentiment analysis** using **VADER** instead of a custom model.  
-✅ Enhanced **TTS quality** by using **gTTS** instead of an open-source model.  
-✅ **Improved UI** with **Streamlit** for a more interactive experience.  
-✅ Deployed successfully on **Hugging Face Spaces** for easy access.  
-
----
-
 ## **🔹 Contributors**
 - **Nikita N A**
 
