@@ -28,7 +28,7 @@ Users can enter a **company name** and receive:
 
 ### **📌 Clone the Repository**
 ```sh
-git clone <your-github-repo-link>
+git clone <https://github.com/Nikita-NA/News-Sentiment-App.git>
 cd news-summarization-app
 ```
 
